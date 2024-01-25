@@ -23,6 +23,9 @@ app.get('/.well-known/assetlinks.json',async (req,res) => {
         }
     ]);
 })
+app.get('/', async (req, res) => {
+    res.json();
+});
 
 app.listen(3000,() => {
     console.log('Server running on port 3000');
